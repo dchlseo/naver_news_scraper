@@ -95,4 +95,4 @@ naver_news_RESULTS_야놀자리서치_20240101_20240415.csv
 ## 작성자
 
 - Yanolja Research
-- 담당: [서대철 선임연구원]
+- 담당: 서대철 선임연구원
