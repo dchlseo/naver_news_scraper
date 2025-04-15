@@ -43,7 +43,7 @@ def parse_pub_date(pub_date_str):
 # ------------------------- MAIN SCRAPER ------------------------- #
 
 def run_scraper(query, start_date_str, end_date_str, client_id, client_secret):
-    import os  # ✅ 추가: 디렉토리 생성을 위해
+    import os  
 
     display = 100
     sort = "date"
