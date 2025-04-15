@@ -67,27 +67,7 @@ naver_news_RESULTS_야놀자리서치_20240101_20240415.csv
 
 | year | month | ym | yq | Date | SearchDate | Keyword | Title | Desc | Link | Original |
 |------|--------|----|----|-------|-------------|---------|--------|------|------|----------|
-| 2024 | 3      |202403|2024Q1|2024-03-10|Sun, 10 Mar 2024...|야놀자|야놀자 뉴스 타이틀|기사 요약|링크|원본 링크|
-
----
-
-## 참고 사항
-
-- `Keyword` 칼럼은 기사 본문에서 `<b>...</b>`로 감싸진 키워드를 추출합니다.
-- `SearchDate`는 네이버 API에서 제공하는 원본 날짜 포맷입니다.
-- `Date`는 이를 `YYYY-MM-DD` 형식으로 변환한 값이며, 필터링에 활용됩니다.
-
----
-
-## 예시 실행 결과
-
-```bash
-📰 야놀자, 글로벌 사업 확장 발표
-🔗 Link: https://news.example.com/view?article=1234
-🗞️ Original: https://news.example.com/view?article=1234
-📝 Desc: 야놀자는 새로운 플랫폼을 출시하며 글로벌 진출을 선언했다...
-📅 Date: 2024-03-10
-🔍 Keyword(s): 야놀자
+| 202치
 ```
 
 ---
