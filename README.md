@@ -1,12 +1,12 @@
 
-# 📘 Naver News Scraper (네이버 뉴스 스크래퍼)
+# Naver News Scraper (네이버 뉴스 스크래퍼)
 
 네이버 오픈 API를 활용해 특정 검색어에 대한 뉴스 기사 목록을 날짜 범위 기준으로 수집하고, CSV 파일로 저장하는 Python 스크립트입니다.  
 검색어 하이라이트(`<b></b>`)를 기반으로 키워드도 추출하며, 날짜 기반 파생 변수(`year`, `month`, `ym`, `yq`)도 포함됩니다.
 
 ---
 
-## ✅ 주요 기능
+## 주요 기능
 
 - 네이버 뉴스 검색 API (JSON) 사용
 - 검색어, 시작일, 종료일 설정 가능 (`YYYYMMDD` 형식)
@@ -17,7 +17,7 @@
 
 ---
 
-## ⚙️ 사용 방법
+## 사용 방법
 
 ### 1. 필요 패키지 설치
 
@@ -55,7 +55,7 @@ python naver_news_scraper.py --query "야놀자" --start_date 20240101 --end_dat
 
 ---
 
-## 📁 출력 파일
+## 출력 파일
 
 스크립트 실행 후, 다음 형식의 파일이 생성됩니다:
 
@@ -63,7 +63,7 @@ python naver_news_scraper.py --query "야놀자" --start_date 20240101 --end_dat
 naver_news_RESULTS_야놀자리서치_20240101_20240415.csv
 ```
 
-### 🔍 CSV 파일 구조
+### CSV 파일 구조
 
 | year | month | ym | yq | Date | SearchDate | Keyword | Title | Desc | Link | Original |
 |------|--------|----|----|-------|-------------|---------|--------|------|------|----------|
@@ -71,7 +71,7 @@ naver_news_RESULTS_야놀자리서치_20240101_20240415.csv
 
 ---
 
-## 📌 참고 사항
+## 참고 사항
 
 - `Keyword` 칼럼은 기사 본문에서 `<b>...</b>`로 감싸진 키워드를 추출합니다.
 - `SearchDate`는 네이버 API에서 제공하는 원본 날짜 포맷입니다.
@@ -79,7 +79,7 @@ naver_news_RESULTS_야놀자리서치_20240101_20240415.csv
 
 ---
 
-## 🙋‍♀️ 예시 실행 결과
+## 예시 실행 결과
 
 ```bash
 📰 야놀자, 글로벌 사업 확장 발표
@@ -92,7 +92,7 @@ naver_news_RESULTS_야놀자리서치_20240101_20240415.csv
 
 ---
 
-## ✍️ 작성자
+## 작성자
 
 - Yanolja Research
 - Made by: SDC
