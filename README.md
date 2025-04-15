@@ -37,7 +37,7 @@ client_secret = "YOUR_CLIENT_SECRET"
 ### 3. 실행
 
 ```bash
-python naver_news_scraper.py --query "야놀자" --start_date 20240101 --end_date 20240415
+python naver_news_scraper.py --query "야놀자리서치" --start_date 20240101 --end_date 20240415
 ```
 
 ### ⚙️ 인자 설명
