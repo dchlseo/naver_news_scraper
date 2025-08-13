@@ -117,12 +117,26 @@ def run_scraper(query, start_date_str, end_date_str, client_id, client_secret):
     col_order = ["year", "month", "ym", "yq"] + [col for col in df.columns if col not in ["year", "month", "ym", "yq"]]
     df = df[col_order]
 
+    ## OLD VERSION: LOCAL ENV
     # ✅ 디렉토리 생성
     os.makedirs("./output", exist_ok=True)
 
     filename = f"./output/naver_news_RESULTS_{query}_{start_date_str}_{end_date_str}.csv"
     df.to_csv(filename, index=False, encoding="utf-8-sig")
     print(f"📁 Saved to: {filename}")
+
+    # NEW VERSION: DATABRICKS
+
+    # ✅ Use a fixed absolute directory in Databricks workspace
+    # save_dir = "/Workspace/Shared/yanolja_research/Data/yar_naver_news"
+    # save_dir = "/dbfs/nol_group_prod.group_nol_yanoljaresearch"
+    # os.makedirs(save_dir, exist_ok=True)
+
+    # filename = os.path.join(
+    #     save_dir,
+    #     f"naver_news_RESULTS_{query}_{start_date_str}_{end_date_str}.csv"
+    # )
+
     return df
 
 # ------------------------- ENTRY POINT ------------------------- #
