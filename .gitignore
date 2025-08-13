@@ -1,3 +1,7 @@
+# Ignore output and notebooks folders (anywhere in the repo)
+output/
+notebooks/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
