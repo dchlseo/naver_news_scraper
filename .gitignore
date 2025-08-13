@@ -1,3 +1,6 @@
+# Ignore notebook files
+*.ipynb
+
 # Ignore output and notebooks folders (anywhere in the repo)
 output/
 notebooks/
